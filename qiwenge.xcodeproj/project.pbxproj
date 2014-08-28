@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0751FDB919A6E247009BBA85 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDB719A6E247009BBA85 /* RecommendViewController.m */; };
+		0751FDBA19A6E247009BBA85 /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0751FDB819A6E247009BBA85 /* RecommendViewController.xib */; };
+		0751FDBE19A6E41A009BBA85 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDBC19A6E41A009BBA85 /* RankViewController.m */; };
+		0751FDBF19A6E41B009BBA85 /* RankViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0751FDBD19A6E41A009BBA85 /* RankViewController.xib */; };
+		0751FDC319A6EDE1009BBA85 /* CategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDC119A6EDE1009BBA85 /* CategoryViewController.m */; };
+		0751FDC419A6EDE1009BBA85 /* CategoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0751FDC219A6EDE1009BBA85 /* CategoryViewController.xib */; };
+		0751FDC819A6F09D009BBA85 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDC619A6F09D009BBA85 /* CategoryCell.m */; };
+		0751FDC919A6F09D009BBA85 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0751FDC719A6F09D009BBA85 /* CategoryCell.xib */; };
+		0751FDCF19A6F1A1009BBA85 /* CategoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDCE19A6F1A1009BBA85 /* CategoryItem.m */; };
+		0751FDD219A6F1D0009BBA85 /* CategoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDD119A6F1D0009BBA85 /* CategoryList.m */; };
+		07594BAD19AF4C8500E9CB2D /* ic_main_menu_fav_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BA719AF4C8500E9CB2D /* ic_main_menu_fav_n.png */; };
+		07594BAE19AF4C8500E9CB2D /* ic_main_menu_fav_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BA819AF4C8500E9CB2D /* ic_main_menu_fav_s.png */; };
+		07594BAF19AF4C8500E9CB2D /* icon_main_bookcity_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BA919AF4C8500E9CB2D /* icon_main_bookcity_n.png */; };
+		07594BB019AF4C8500E9CB2D /* icon_main_bookcity_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BAA19AF4C8500E9CB2D /* icon_main_bookcity_s.png */; };
+		07594BB119AF4C8500E9CB2D /* seekbar_thumb_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BAB19AF4C8500E9CB2D /* seekbar_thumb_normal.png */; };
+		07594BB219AF4C8500E9CB2D /* seekbar_thumb_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BAC19AF4C8500E9CB2D /* seekbar_thumb_selected.png */; };
+		07A1D7CF19AB7E42000E21FB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A1D7CE19AB7E42000E21FB /* icon.png */; };
+		07E4E14F19AF096C00ED459E /* ViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E4E14E19AF096C00ED459E /* ViewPager.m */; };
 		10643F17196B92D100FD6FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10643F16196B92D100FD6FF0 /* Foundation.framework */; };
 		10643F19196B92D100FD6FF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10643F18196B92D100FD6FF0 /* CoreGraphics.framework */; };
 		10643F1B196B92D100FD6FF0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10643F1A196B92D100FD6FF0 /* UIKit.framework */; };
@@ -53,6 +71,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0751FDB619A6E247009BBA85 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
+		0751FDB719A6E247009BBA85 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
+		0751FDB819A6E247009BBA85 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
+		0751FDBB19A6E41A009BBA85 /* RankViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankViewController.h; sourceTree = "<group>"; };
+		0751FDBC19A6E41A009BBA85 /* RankViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankViewController.m; sourceTree = "<group>"; };
+		0751FDBD19A6E41A009BBA85 /* RankViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RankViewController.xib; sourceTree = "<group>"; };
+		0751FDC019A6EDE1009BBA85 /* CategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryViewController.h; sourceTree = "<group>"; };
+		0751FDC119A6EDE1009BBA85 /* CategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryViewController.m; sourceTree = "<group>"; };
+		0751FDC219A6EDE1009BBA85 /* CategoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryViewController.xib; sourceTree = "<group>"; };
+		0751FDC519A6F09D009BBA85 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
+		0751FDC619A6F09D009BBA85 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
+		0751FDC719A6F09D009BBA85 /* CategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		0751FDCD19A6F1A1009BBA85 /* CategoryItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryItem.h; sourceTree = "<group>"; };
+		0751FDCE19A6F1A1009BBA85 /* CategoryItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryItem.m; sourceTree = "<group>"; };
+		0751FDD019A6F1D0009BBA85 /* CategoryList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryList.h; sourceTree = "<group>"; };
+		0751FDD119A6F1D0009BBA85 /* CategoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryList.m; sourceTree = "<group>"; };
+		07594BA719AF4C8500E9CB2D /* ic_main_menu_fav_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_fav_n.png; sourceTree = "<group>"; };
+		07594BA819AF4C8500E9CB2D /* ic_main_menu_fav_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_fav_s.png; sourceTree = "<group>"; };
+		07594BA919AF4C8500E9CB2D /* icon_main_bookcity_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_main_bookcity_n.png; sourceTree = "<group>"; };
+		07594BAA19AF4C8500E9CB2D /* icon_main_bookcity_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_main_bookcity_s.png; sourceTree = "<group>"; };
+		07594BAB19AF4C8500E9CB2D /* seekbar_thumb_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seekbar_thumb_normal.png; sourceTree = "<group>"; };
+		07594BAC19AF4C8500E9CB2D /* seekbar_thumb_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seekbar_thumb_selected.png; sourceTree = "<group>"; };
+		07A1D7CE19AB7E42000E21FB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		07E4E14D19AF096B00ED459E /* ViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPager.h; sourceTree = "<group>"; };
+		07E4E14E19AF096C00ED459E /* ViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPager.m; sourceTree = "<group>"; };
 		10643F13196B92D100FD6FF0 /* qiwenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiwenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10643F16196B92D100FD6FF0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		10643F18196B92D100FD6FF0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +177,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07A1D7CC19AB7E42000E21FB /* res */ = {
+			isa = PBXGroup;
+			children = (
+				07A1D7CD19AB7E42000E21FB /* images */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		07A1D7CD19AB7E42000E21FB /* images */ = {
+			isa = PBXGroup;
+			children = (
+				07594BA719AF4C8500E9CB2D /* ic_main_menu_fav_n.png */,
+				07594BA819AF4C8500E9CB2D /* ic_main_menu_fav_s.png */,
+				07594BA919AF4C8500E9CB2D /* icon_main_bookcity_n.png */,
+				07594BAA19AF4C8500E9CB2D /* icon_main_bookcity_s.png */,
+				07594BAB19AF4C8500E9CB2D /* seekbar_thumb_normal.png */,
+				07594BAC19AF4C8500E9CB2D /* seekbar_thumb_selected.png */,
+				07A1D7CE19AB7E42000E21FB /* icon.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		10643F0A196B92D100FD6FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -174,11 +239,12 @@
 		10643F1C196B92D100FD6FF0 /* qiwenge */ = {
 			isa = PBXGroup;
 			children = (
+				07A1D7CC19AB7E42000E21FB /* res */,
 				10BBE72E196BEAD600872B2A /* models */,
 				10BBE720196BCC4F00872B2A /* utils */,
 				10BBE716196BC80000872B2A /* cells */,
 				10BBE6FE196BA38100872B2A /* additions */,
-				10BBE6F8196BA1FF00872B2A /* ui */,
+				10BBE6F8196BA1FF00872B2A /* controllers */,
 				10643F25196B92D100FD6FF0 /* AppDelegate.h */,
 				10643F26196B92D100FD6FF0 /* AppDelegate.m */,
 				10643F28196B92D100FD6FF0 /* Images.xcassets */,
@@ -216,7 +282,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		10BBE6F8196BA1FF00872B2A /* ui */ = {
+		10BBE6F8196BA1FF00872B2A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
 				10BBE710196BBFA100872B2A /* bookcity */,
@@ -228,12 +294,14 @@
 				10BBE703196BA4E900872B2A /* MainViewController.m */,
 				10BBE704196BA4E900872B2A /* MainViewController.xib */,
 			);
-			name = ui;
+			name = controllers;
 			sourceTree = "<group>";
 		};
 		10BBE6FE196BA38100872B2A /* additions */ = {
 			isa = PBXGroup;
 			children = (
+				07E4E14D19AF096B00ED459E /* ViewPager.h */,
+				07E4E14E19AF096C00ED459E /* ViewPager.m */,
 				10BBE707196BB47900872B2A /* UIColor+Utils.h */,
 				10BBE708196BB47900872B2A /* UIColor+Utils.m */,
 				10BBE6FF196BA38100872B2A /* UIViewController+Navigation.h */,
@@ -258,6 +326,15 @@
 		10BBE710196BBFA100872B2A /* bookcity */ = {
 			isa = PBXGroup;
 			children = (
+				0751FDB619A6E247009BBA85 /* RecommendViewController.h */,
+				0751FDB719A6E247009BBA85 /* RecommendViewController.m */,
+				0751FDB819A6E247009BBA85 /* RecommendViewController.xib */,
+				0751FDBB19A6E41A009BBA85 /* RankViewController.h */,
+				0751FDBC19A6E41A009BBA85 /* RankViewController.m */,
+				0751FDBD19A6E41A009BBA85 /* RankViewController.xib */,
+				0751FDC019A6EDE1009BBA85 /* CategoryViewController.h */,
+				0751FDC119A6EDE1009BBA85 /* CategoryViewController.m */,
+				0751FDC219A6EDE1009BBA85 /* CategoryViewController.xib */,
 			);
 			name = bookcity;
 			sourceTree = "<group>";
@@ -269,6 +346,9 @@
 				10BBE71B196BC83C00872B2A /* BooksCell.h */,
 				10BBE71C196BC83C00872B2A /* BooksCell.m */,
 				10BBE71D196BC83C00872B2A /* BooksCell.xib */,
+				0751FDC519A6F09D009BBA85 /* CategoryCell.h */,
+				0751FDC619A6F09D009BBA85 /* CategoryCell.m */,
+				0751FDC719A6F09D009BBA85 /* CategoryCell.xib */,
 			);
 			path = cells;
 			sourceTree = "<group>";
@@ -298,6 +378,10 @@
 				10BBE730196BEAFB00872B2A /* Books.m */,
 				10BBE732196BEC2B00872B2A /* Book.h */,
 				10BBE733196BEC2B00872B2A /* Book.m */,
+				0751FDCD19A6F1A1009BBA85 /* CategoryItem.h */,
+				0751FDCE19A6F1A1009BBA85 /* CategoryItem.m */,
+				0751FDD019A6F1D0009BBA85 /* CategoryList.h */,
+				0751FDD119A6F1D0009BBA85 /* CategoryList.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -385,10 +469,21 @@
 				10643F21196B92D100FD6FF0 /* InfoPlist.strings in Resources */,
 				10643F29196B92D100FD6FF0 /* Images.xcassets in Resources */,
 				10BBE715196BC44B00872B2A /* BookShelfViewController.xib in Resources */,
+				0751FDBF19A6E41B009BBA85 /* RankViewController.xib in Resources */,
 				10BBE6FD196BA23900872B2A /* RootViewController.xib in Resources */,
+				07594BAF19AF4C8500E9CB2D /* icon_main_bookcity_n.png in Resources */,
+				07594BAE19AF4C8500E9CB2D /* ic_main_menu_fav_s.png in Resources */,
+				07594BAD19AF4C8500E9CB2D /* ic_main_menu_fav_n.png in Resources */,
 				10BBE70F196BB98200872B2A /* BookCityViewController.xib in Resources */,
+				0751FDBA19A6E247009BBA85 /* RecommendViewController.xib in Resources */,
+				07594BB119AF4C8500E9CB2D /* seekbar_thumb_normal.png in Resources */,
 				10BBE71F196BC83C00872B2A /* BooksCell.xib in Resources */,
+				07A1D7CF19AB7E42000E21FB /* icon.png in Resources */,
+				0751FDC919A6F09D009BBA85 /* CategoryCell.xib in Resources */,
+				07594BB019AF4C8500E9CB2D /* icon_main_bookcity_s.png in Resources */,
+				0751FDC419A6EDE1009BBA85 /* CategoryViewController.xib in Resources */,
 				10BBE706196BA4E900872B2A /* MainViewController.xib in Resources */,
+				07594BB219AF4C8500E9CB2D /* seekbar_thumb_selected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,19 +535,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E4E14F19AF096C00ED459E /* ViewPager.m in Sources */,
+				0751FDC819A6F09D009BBA85 /* CategoryCell.m in Sources */,
+				0751FDC319A6EDE1009BBA85 /* CategoryViewController.m in Sources */,
 				10BBE734196BEC2B00872B2A /* Book.m in Sources */,
 				10BBE731196BEAFB00872B2A /* Books.m in Sources */,
 				10BBE714196BC44B00872B2A /* BookShelfViewController.m in Sources */,
 				10BBE701196BA38100872B2A /* UIViewController+Navigation.m in Sources */,
 				10BBE723196BCD6900872B2A /* ApiUtils.m in Sources */,
 				10BBE709196BB47900872B2A /* UIColor+Utils.m in Sources */,
+				0751FDCF19A6F1A1009BBA85 /* CategoryItem.m in Sources */,
 				10BBE70E196BB98200872B2A /* BookCityViewController.m in Sources */,
 				10643F27196B92D100FD6FF0 /* AppDelegate.m in Sources */,
 				10BBE719196BC80000872B2A /* BaseCell.m in Sources */,
+				0751FDB919A6E247009BBA85 /* RecommendViewController.m in Sources */,
 				10BBE71E196BC83C00872B2A /* BooksCell.m in Sources */,
 				10643F23196B92D100FD6FF0 /* main.m in Sources */,
 				10BBE705196BA4E900872B2A /* MainViewController.m in Sources */,
+				0751FDD219A6F1D0009BBA85 /* CategoryList.m in Sources */,
 				10BBE6FC196BA23900872B2A /* RootViewController.m in Sources */,
+				0751FDBE19A6E41A009BBA85 /* RankViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
