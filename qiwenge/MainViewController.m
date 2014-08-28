@@ -26,15 +26,23 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [super viewDidLoad]; 
+    
     [self initNavigationBarWithTopTitle:@"书架" leftTitle:nil rightTitle:nil];
     [self initViews];
 }
 
 -(void)initViews{
+    int height=self.mContainer.frame.size.height;
+    NSLog(@"height:%d:",height);
+    
     self.bookShelf=[[BookShelfViewController alloc] init];
-    [self addChildViewController:self.bookShelf];
     [self.mContainer addSubview:self.bookShelf.view];
+    
+    self.bookCity=[[BookCityViewController alloc] init];
+    [self.mContainer addSubview:self.bookCity.view];
+    
+    [self.bookCity.view setHidden:YES];
 }
 
 -(void)showBookCity{
@@ -57,13 +65,6 @@
 }
 
 - (IBAction)onBookCityClick:(id)sender {
-    
-    if(self.bookShelf){
-        self.bookCity=[[BookCityViewController alloc] init];
-        [self addChildViewController:self.bookCity];
-        [self.mContainer addSubview:self.bookCity.view];
-    }
     [self showBookCity];
-    
 }
 @end
