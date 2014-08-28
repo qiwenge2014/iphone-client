@@ -42,6 +42,8 @@
 
 -(void)getBooks{
     NSString *url=[ApiUtils getBooks];
+    url=[NSString stringWithFormat:@"%@?limit=5",url];
+    NSLog(@"url:%@",url);
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     manager.responseSerializer.acceptableContentTypes=[NSSet setWithObject:@"text/html"];
     [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {

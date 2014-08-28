@@ -7,8 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewPagerController.h"
+#import "RecommendViewController.h"
+#import "RankViewController.h"
+#import "CategoryViewController.h" 
+#import "ViewPager.h"
 
-@interface BookCityViewController : ViewPagerController
+@interface BookCityViewController : UIViewController<UIViewPagerDelegate>
+ 
+@property (weak, nonatomic) IBOutlet ViewPager *mSlideView;
+
+@property(strong, nonatomic) RecommendViewController *recommendViewController;
+
+@property(strong, nonatomic) RankViewController *rankViewController;
+
+@property(strong, nonatomic) CategoryViewController *categoryViewController;
 
 @end
