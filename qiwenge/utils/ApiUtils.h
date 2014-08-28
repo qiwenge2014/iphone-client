@@ -12,4 +12,6 @@
 
 +(NSString *)getBooks;
 
++(NSString *)getCategories;
+
 @end

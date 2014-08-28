@@ -11,11 +11,17 @@
 #define         HOST_NAME               @"http://api.qiwenge.com/%@"
 #define         FORMAT_ONE_PARAMS       [NSString stringWithFormat:HOST_NAME,@"%@"]
 #define         BOOKS                   @"books"
+#define         CATEGORIES              @"categories"
+
 
 @implementation ApiUtils
 
 +(NSString *)getBooks{
     return [NSString stringWithFormat:FORMAT_ONE_PARAMS,BOOKS];
+}
+
++(NSString *)getCategories{
+    return [NSString stringWithFormat:FORMAT_ONE_PARAMS,CATEGORIES];
 }
 
 @end
