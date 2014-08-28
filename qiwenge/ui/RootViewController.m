@@ -28,7 +28,7 @@
 {
     [super viewDidLoad];
     [self.navigationController setNavigationBarHidden:YES];
-    NSTimer *timer=[NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(skipToMain) userInfo:nil repeats:NO];
+    [NSTimer scheduledTimerWithTimeInterval:1.5 target:self selector:@selector(skipToMain) userInfo:nil repeats:NO];
 }
 
 -(void)skipToMain{
