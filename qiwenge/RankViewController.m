@@ -12,12 +12,15 @@
 #import "JSONModel.h"
 #import "Books.h"
 #import "Book.h"
+#import "BookDetailViewController.h"
 
 @interface RankViewController ()
 
 @end
 
 @implementation RankViewController
+
+@synthesize mDelegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,18 +47,14 @@
 -(void)getBooks{
     NSString *url=[ApiUtils getBooks];
     url=[NSString stringWithFormat:@"%@?limit=20",url];
-    NSLog(@"url:%@",url);
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer.acceptableContentTypes=[NSSet setWithObject:@"text/html"];
-    [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        Books *books=[[Books alloc] initWithString:operation.responseString error:nil];
+    [AsyncHttpClient get:url classOf:[Books class] success:^(id result) {
+        Books *books=result;
         NSArray *array=books.result;
         [self.data addObjectsFromArray:array];
         [self.mTableView reloadData];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
+    } failure:^(NSString *failureMessage) {
+        
     }];
-    
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -70,6 +69,16 @@
     Book *book=[self.data objectAtIndex:indexPath.row];
     [cell bindData:book];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [mDelegate skipToBookDetail:[self.data objectAtIndex:indexPath.row]];
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if(self.mTableView.contentOffset.y >= (self.mTableView.contentSize.height - self.mTableView.bounds.size.height)){
+        NSLog(@"hit bottom!");
+    }
 }
 
 @end
