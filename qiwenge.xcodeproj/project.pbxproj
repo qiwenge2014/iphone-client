@@ -23,7 +23,10 @@
 		07594BB019AF4C8500E9CB2D /* icon_main_bookcity_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BAA19AF4C8500E9CB2D /* icon_main_bookcity_s.png */; };
 		07594BB119AF4C8500E9CB2D /* seekbar_thumb_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BAB19AF4C8500E9CB2D /* seekbar_thumb_normal.png */; };
 		07594BB219AF4C8500E9CB2D /* seekbar_thumb_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BAC19AF4C8500E9CB2D /* seekbar_thumb_selected.png */; };
+		07594BB519AF772D00E9CB2D /* AsyncHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 07594BB419AF772D00E9CB2D /* AsyncHttpClient.m */; };
 		07A1D7CF19AB7E42000E21FB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A1D7CE19AB7E42000E21FB /* icon.png */; };
+		07CE714C19B1DF3E009FCA6F /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CE714A19B1DF3E009FCA6F /* BookDetailViewController.m */; };
+		07CE714D19B1DF3E009FCA6F /* BookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CE714B19B1DF3E009FCA6F /* BookDetailViewController.xib */; };
 		07E4E14F19AF096C00ED459E /* ViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E4E14E19AF096C00ED459E /* ViewPager.m */; };
 		10643F17196B92D100FD6FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10643F16196B92D100FD6FF0 /* Foundation.framework */; };
 		10643F19196B92D100FD6FF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10643F18196B92D100FD6FF0 /* CoreGraphics.framework */; };
@@ -71,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070F2DAF19B758940054811E /* ShowBookDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowBookDelegate.h; sourceTree = "<group>"; };
 		0751FDB619A6E247009BBA85 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		0751FDB719A6E247009BBA85 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		0751FDB819A6E247009BBA85 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
@@ -93,7 +97,13 @@
 		07594BAA19AF4C8500E9CB2D /* icon_main_bookcity_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_main_bookcity_s.png; sourceTree = "<group>"; };
 		07594BAB19AF4C8500E9CB2D /* seekbar_thumb_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seekbar_thumb_normal.png; sourceTree = "<group>"; };
 		07594BAC19AF4C8500E9CB2D /* seekbar_thumb_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seekbar_thumb_selected.png; sourceTree = "<group>"; };
+		07594BB319AF772D00E9CB2D /* AsyncHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncHttpClient.h; sourceTree = "<group>"; };
+		07594BB419AF772D00E9CB2D /* AsyncHttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncHttpClient.m; sourceTree = "<group>"; };
 		07A1D7CE19AB7E42000E21FB /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		07CE714919B1DF3E009FCA6F /* BookDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookDetailViewController.h; sourceTree = "<group>"; };
+		07CE714A19B1DF3E009FCA6F /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
+		07CE714B19B1DF3E009FCA6F /* BookDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDetailViewController.xib; sourceTree = "<group>"; };
+		07CE714E19B220E2009FCA6F /* PassArgumentsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassArgumentsDelegate.h; sourceTree = "<group>"; };
 		07E4E14D19AF096B00ED459E /* ViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPager.h; sourceTree = "<group>"; };
 		07E4E14E19AF096C00ED459E /* ViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPager.m; sourceTree = "<group>"; };
 		10643F13196B92D100FD6FF0 /* qiwenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiwenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +209,16 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		07CE714819B1DF1B009FCA6F /* common */ = {
+			isa = PBXGroup;
+			children = (
+				07CE714919B1DF3E009FCA6F /* BookDetailViewController.h */,
+				07CE714A19B1DF3E009FCA6F /* BookDetailViewController.m */,
+				07CE714B19B1DF3E009FCA6F /* BookDetailViewController.xib */,
+			);
+			name = common;
+			sourceTree = "<group>";
+		};
 		10643F0A196B92D100FD6FF0 = {
 			isa = PBXGroup;
 			children = (
@@ -285,6 +305,7 @@
 		10BBE6F8196BA1FF00872B2A /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				07CE714819B1DF1B009FCA6F /* common */,
 				10BBE710196BBFA100872B2A /* bookcity */,
 				10BBE70A196BB96700872B2A /* maintab */,
 				10BBE6F9196BA23900872B2A /* RootViewController.h */,
@@ -367,6 +388,10 @@
 			children = (
 				10BBE721196BCD6900872B2A /* ApiUtils.h */,
 				10BBE722196BCD6900872B2A /* ApiUtils.m */,
+				07594BB319AF772D00E9CB2D /* AsyncHttpClient.h */,
+				07594BB419AF772D00E9CB2D /* AsyncHttpClient.m */,
+				07CE714E19B220E2009FCA6F /* PassArgumentsDelegate.h */,
+				070F2DAF19B758940054811E /* ShowBookDelegate.h */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -476,6 +501,7 @@
 				07594BAD19AF4C8500E9CB2D /* ic_main_menu_fav_n.png in Resources */,
 				10BBE70F196BB98200872B2A /* BookCityViewController.xib in Resources */,
 				0751FDBA19A6E247009BBA85 /* RecommendViewController.xib in Resources */,
+				07CE714D19B1DF3E009FCA6F /* BookDetailViewController.xib in Resources */,
 				07594BB119AF4C8500E9CB2D /* seekbar_thumb_normal.png in Resources */,
 				10BBE71F196BC83C00872B2A /* BooksCell.xib in Resources */,
 				07A1D7CF19AB7E42000E21FB /* icon.png in Resources */,
@@ -535,6 +561,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07CE714C19B1DF3E009FCA6F /* BookDetailViewController.m in Sources */,
+				07594BB519AF772D00E9CB2D /* AsyncHttpClient.m in Sources */,
 				07E4E14F19AF096C00ED459E /* ViewPager.m in Sources */,
 				0751FDC819A6F09D009BBA85 /* CategoryCell.m in Sources */,
 				0751FDC319A6EDE1009BBA85 /* CategoryViewController.m in Sources */,
