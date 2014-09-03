@@ -12,9 +12,13 @@
 
 + (UIColor *)backgoundColor;
 
++ (UIColor *)sendBackgoundColor;
+
 + (UIColor *)actionbarBgColor;
 
 + (UIColor *)coverBorder;
+
++ (UIColor *)mainDressColor;
 
 + (UIColor *)colorWithHex:(NSString *)hexColor;
 

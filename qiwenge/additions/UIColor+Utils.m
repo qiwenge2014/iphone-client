@@ -8,18 +8,32 @@
 
 #import "UIColor+Utils.h"
 
+#define     BACKGOURND_COLOR                @"#ffffff"
+#define     SECOND_BACKGOURND_COLOR         @"#eeeeee"
+#define     ACTIONBAR_BG_COLOR              @"#303030"
+#define     COVER_BORDER_COLOR              @"#c7c7c7"
+#define     MAIN_DRESS_COLOR                @"#ee7a31"
+
 @implementation UIColor (Utils)
 
 +(UIColor *)backgoundColor{
-    return [UIColor colorWithHex:@"#edede3"];
+    return [UIColor colorWithHex:BACKGOURND_COLOR];
+}
+
++(UIColor *)sendBackgoundColor{
+    return [UIColor colorWithHex:SECOND_BACKGOURND_COLOR];
 }
 
 +(UIColor *)actionbarBgColor{
-     return [UIColor colorWithHex:@"#303030"];
+     return [UIColor colorWithHex:ACTIONBAR_BG_COLOR];
 }
 
 +(UIColor *)coverBorder{
-    return [UIColor colorWithHex:@"#c7c7c7"];
+    return [UIColor colorWithHex:COVER_BORDER_COLOR];
+}
+
++(UIColor *)mainDressColor{
+    return [UIColor colorWithHex:MAIN_DRESS_COLOR];
 }
 
 + (UIColor *)colorWithHex:(NSString *)hexColor {
