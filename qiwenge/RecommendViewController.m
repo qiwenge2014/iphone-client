@@ -44,18 +44,12 @@
 -(void)getBooks{
     NSString *url=[ApiUtils getBooks];
     url=[NSString stringWithFormat:@"%@?limit=20",url];
-    NSLog(@"url:%@",url);
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    manager.responseSerializer.acceptableContentTypes=[NSSet setWithObject:@"text/html"];
-    [manager GET:url parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        Books *books=[[Books alloc] initWithString:operation.responseString error:nil];
+    [AsyncHttpClient get:url classOf:[Books class] success:^(id result) {
+        Books *books=result;
         NSArray *array=books.result;
         [self.data addObjectsFromArray:array];
         [self.mTableView reloadData];
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
-    }];
-    
+    } failure:nil];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

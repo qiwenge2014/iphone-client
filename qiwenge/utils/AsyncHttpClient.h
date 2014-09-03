@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AFNetworking.h"
+
+//typedef void(^HTTPCallBack)(ServiceResult *result);
+
+typedef void(^SuccessHandler)(id result);
+
+typedef void(^FailureHandler)(NSString *failureMessage);
 
 @interface AsyncHttpClient : NSObject
+
++(void)get:(NSString *)url classOf:(Class)classOf success:(SuccessHandler)success failure:(FailureHandler)failure;
 
 @end

@@ -28,7 +28,10 @@
     [super viewDidLoad];  
     
     self.recommendViewController=[[RecommendViewController alloc] init];
+    
     self.rankViewController=[[RankViewController alloc] init];
+    self.rankViewController.mDelegate=self.mDelegate;
+    
     self.categoryViewController=[[CategoryViewController alloc] init];
     
     [self.mSlideView buildUI];

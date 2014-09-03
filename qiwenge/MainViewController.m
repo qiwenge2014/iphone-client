@@ -7,7 +7,7 @@
 //
 
 #import "MainViewController.h"
-#import "UIViewController+Navigation.h"
+#import "BookDetailViewController.h"
 
 @interface MainViewController ()
 
@@ -37,9 +37,11 @@
     NSLog(@"height:%d:",height);
     
     self.bookShelf=[[BookShelfViewController alloc] init];
+    self.bookShelf.mDelegate=self;
     [self.mContainer addSubview:self.bookShelf.view];
     
     self.bookCity=[[BookCityViewController alloc] init];
+    self.bookCity.mDelegate=self;
     [self.mContainer addSubview:self.bookCity.view];
     
     [self.bookCity.view setHidden:YES];
@@ -67,4 +69,11 @@
 - (IBAction)onBookCityClick:(id)sender {
     [self showBookCity];
 }
+
+-(void)skipToBookDetail:(Book *)book{
+    BookDetailViewController *bookDetail=[[BookDetailViewController alloc] init];
+    [bookDetail passArguments:book];
+    [self.navigationController pushViewController:bookDetail animated:YES];
+}
+
 @end

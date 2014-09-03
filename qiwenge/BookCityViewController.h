@@ -22,4 +22,6 @@
 
 @property(strong, nonatomic) CategoryViewController *categoryViewController;
 
+@property(retain, nonatomic) id mDelegate;
+
 @end
