@@ -14,4 +14,8 @@
 
 +(NSString *)getCategories;
 
++(NSString *)getRecommendBooks;
+
++(NSString *)getRank;
+
 @end

@@ -10,9 +10,11 @@
 
 #define         HOST_NAME               @"http://api.qiwenge.com/%@"
 #define         FORMAT_ONE_PARAMS       [NSString stringWithFormat:HOST_NAME,@"%@"]
+#define         FORMAT_TWO_PARAMS       [NSString stringWithFormat:HOST_NAME,@"%@/%@"]
 #define         BOOKS                   @"books"
 #define         CATEGORIES              @"categories"
-
+#define         RECOMMEND               @"recommend"
+#define         TOP                     @"top"
 
 @implementation ApiUtils
 
@@ -22,6 +24,14 @@
 
 +(NSString *)getCategories{
     return [NSString stringWithFormat:FORMAT_ONE_PARAMS,CATEGORIES];
+}
+
++(NSString *)getRecommendBooks{
+    return [NSString stringWithFormat:FORMAT_TWO_PARAMS,BOOKS,RECOMMEND];
+}
+
++(NSString *)getRank{
+     return [NSString stringWithFormat:FORMAT_TWO_PARAMS,BOOKS,TOP];
 }
 
 @end
