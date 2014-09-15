@@ -10,4 +10,10 @@
 
 @interface NSString (Utils)
 
+- (NSString *)trim;
+
+- (NSString *)appendQueryStringKey:(NSString*)key intValue:(NSInteger)value;
+
+- (NSString *)appendQueryStringKey:(NSString*)key stringValue:(NSString*)value;
+
 @end
