@@ -17,4 +17,5 @@
     #import "UIColor+Utils.h"
     #import "ApiUtils.h"
     #import "AsyncHttpClient.h"
+    #import "NSString+Utils.h"
 #endif

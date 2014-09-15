@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071EDA6519C3450200DCDEBB /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 071EDA6419C3450200DCDEBB /* NSString+Utils.m */; };
 		0751FDB919A6E247009BBA85 /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDB719A6E247009BBA85 /* RecommendViewController.m */; };
 		0751FDBA19A6E247009BBA85 /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0751FDB819A6E247009BBA85 /* RecommendViewController.xib */; };
 		0751FDBE19A6E41A009BBA85 /* RankViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDBC19A6E41A009BBA85 /* RankViewController.m */; };
@@ -27,6 +28,8 @@
 		07A1D7CF19AB7E42000E21FB /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 07A1D7CE19AB7E42000E21FB /* icon.png */; };
 		07CE714C19B1DF3E009FCA6F /* BookDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07CE714A19B1DF3E009FCA6F /* BookDetailViewController.m */; };
 		07CE714D19B1DF3E009FCA6F /* BookDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CE714B19B1DF3E009FCA6F /* BookDetailViewController.xib */; };
+		07E4390319C5D3AC00F8B04A /* EGORefreshTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E4390219C5D3AC00F8B04A /* EGORefreshTableHeaderView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		07E4390519C5E00F00F8B04A /* icon_pull_to_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 07E4390419C5E00F00F8B04A /* icon_pull_to_refresh.png */; };
 		07E4E14F19AF096C00ED459E /* ViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 07E4E14E19AF096C00ED459E /* ViewPager.m */; };
 		10643F17196B92D100FD6FF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10643F16196B92D100FD6FF0 /* Foundation.framework */; };
 		10643F19196B92D100FD6FF0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10643F18196B92D100FD6FF0 /* CoreGraphics.framework */; };
@@ -75,6 +78,8 @@
 
 /* Begin PBXFileReference section */
 		070F2DAF19B758940054811E /* ShowBookDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowBookDelegate.h; sourceTree = "<group>"; };
+		071EDA6319C3450200DCDEBB /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		071EDA6419C3450200DCDEBB /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
 		0751FDB619A6E247009BBA85 /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		0751FDB719A6E247009BBA85 /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		0751FDB819A6E247009BBA85 /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
@@ -104,6 +109,9 @@
 		07CE714A19B1DF3E009FCA6F /* BookDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookDetailViewController.m; sourceTree = "<group>"; };
 		07CE714B19B1DF3E009FCA6F /* BookDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookDetailViewController.xib; sourceTree = "<group>"; };
 		07CE714E19B220E2009FCA6F /* PassArgumentsDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PassArgumentsDelegate.h; sourceTree = "<group>"; };
+		07E4390119C5D3AC00F8B04A /* EGORefreshTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGORefreshTableHeaderView.h; sourceTree = "<group>"; };
+		07E4390219C5D3AC00F8B04A /* EGORefreshTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGORefreshTableHeaderView.m; sourceTree = "<group>"; };
+		07E4390419C5E00F00F8B04A /* icon_pull_to_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_pull_to_refresh.png; sourceTree = "<group>"; };
 		07E4E14D19AF096B00ED459E /* ViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPager.h; sourceTree = "<group>"; };
 		07E4E14E19AF096C00ED459E /* ViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewPager.m; sourceTree = "<group>"; };
 		10643F13196B92D100FD6FF0 /* qiwenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qiwenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +206,7 @@
 		07A1D7CD19AB7E42000E21FB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				07E4390419C5E00F00F8B04A /* icon_pull_to_refresh.png */,
 				07594BA719AF4C8500E9CB2D /* ic_main_menu_fav_n.png */,
 				07594BA819AF4C8500E9CB2D /* ic_main_menu_fav_s.png */,
 				07594BA919AF4C8500E9CB2D /* icon_main_bookcity_n.png */,
@@ -217,6 +226,23 @@
 				07CE714B19B1DF3E009FCA6F /* BookDetailViewController.xib */,
 			);
 			name = common;
+			sourceTree = "<group>";
+		};
+		07E438FF19C5D3AC00F8B04A /* vendors */ = {
+			isa = PBXGroup;
+			children = (
+				07E4390019C5D3AC00F8B04A /* EGORefreshTableHeaderView */,
+			);
+			path = vendors;
+			sourceTree = "<group>";
+		};
+		07E4390019C5D3AC00F8B04A /* EGORefreshTableHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				07E4390119C5D3AC00F8B04A /* EGORefreshTableHeaderView.h */,
+				07E4390219C5D3AC00F8B04A /* EGORefreshTableHeaderView.m */,
+			);
+			path = EGORefreshTableHeaderView;
 			sourceTree = "<group>";
 		};
 		10643F0A196B92D100FD6FF0 = {
@@ -259,6 +285,7 @@
 		10643F1C196B92D100FD6FF0 /* qiwenge */ = {
 			isa = PBXGroup;
 			children = (
+				07E438FF19C5D3AC00F8B04A /* vendors */,
 				07A1D7CC19AB7E42000E21FB /* res */,
 				10BBE72E196BEAD600872B2A /* models */,
 				10BBE720196BCC4F00872B2A /* utils */,
@@ -327,6 +354,8 @@
 				10BBE708196BB47900872B2A /* UIColor+Utils.m */,
 				10BBE6FF196BA38100872B2A /* UIViewController+Navigation.h */,
 				10BBE700196BA38100872B2A /* UIViewController+Navigation.m */,
+				071EDA6319C3450200DCDEBB /* NSString+Utils.h */,
+				071EDA6419C3450200DCDEBB /* NSString+Utils.m */,
 			);
 			path = additions;
 			sourceTree = "<group>";
@@ -507,6 +536,7 @@
 				07A1D7CF19AB7E42000E21FB /* icon.png in Resources */,
 				0751FDC919A6F09D009BBA85 /* CategoryCell.xib in Resources */,
 				07594BB019AF4C8500E9CB2D /* icon_main_bookcity_s.png in Resources */,
+				07E4390519C5E00F00F8B04A /* icon_pull_to_refresh.png in Resources */,
 				0751FDC419A6EDE1009BBA85 /* CategoryViewController.xib in Resources */,
 				10BBE706196BA4E900872B2A /* MainViewController.xib in Resources */,
 				07594BB219AF4C8500E9CB2D /* seekbar_thumb_selected.png in Resources */,
@@ -573,8 +603,10 @@
 				10BBE723196BCD6900872B2A /* ApiUtils.m in Sources */,
 				10BBE709196BB47900872B2A /* UIColor+Utils.m in Sources */,
 				0751FDCF19A6F1A1009BBA85 /* CategoryItem.m in Sources */,
+				07E4390319C5D3AC00F8B04A /* EGORefreshTableHeaderView.m in Sources */,
 				10BBE70E196BB98200872B2A /* BookCityViewController.m in Sources */,
 				10643F27196B92D100FD6FF0 /* AppDelegate.m in Sources */,
+				071EDA6519C3450200DCDEBB /* NSString+Utils.m in Sources */,
 				10BBE719196BC80000872B2A /* BaseCell.m in Sources */,
 				0751FDB919A6E247009BBA85 /* RecommendViewController.m in Sources */,
 				10BBE71E196BC83C00872B2A /* BooksCell.m in Sources */,
