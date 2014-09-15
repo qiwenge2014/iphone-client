@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "ShowBookDelegate.h"
+#import "EGORefreshTableHeaderView.h"
 
-@interface RankViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>{
+@interface RankViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,EGORefreshTableHeaderDelegate>{
     id<ShowBookDelegate> mDelegate;
 }
 
