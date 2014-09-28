@@ -7,7 +7,15 @@
 //
 
 #import "JSONModel.h"
+#import "Chapter.h"
+
+@protocol Chapter
+@end
 
 @interface ChapterList : JSONModel
+
+@property (assign, nonatomic) int total;
+
+@property (strong, nonatomic) NSArray<Chapter> *result;
 
 @end

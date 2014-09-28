@@ -10,4 +10,8 @@
 
 @implementation BaseJsonModel
 
+-(NSString *)getId{
+    return self._id.$id;
+}
+
 @end

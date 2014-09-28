@@ -10,4 +10,6 @@
 
 @interface Id : JSONModel
 
+@property(strong ,nonatomic) NSString *$id;
+
 @end

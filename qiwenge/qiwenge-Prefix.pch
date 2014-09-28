@@ -14,8 +14,20 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import "UIViewController+Navigation.h"
-    #import "UIColor+Utils.h"
+    #import <SDWebImage/UIImageView+WebCache.h>
+
     #import "ApiUtils.h"
     #import "AsyncHttpClient.h"
+    #import "BaseCell.h"
+    #import "FooterPageCell.h"
+    #import "PassArgumentsDelegate.h"
+    #import "BaseJsonModel.h"
+
+    //Utils
+    #import "UIView+Utils.h"
+    #import "UIImageView+Utils.h"
+    #import "UILabel+Utils.h"
+    #import "UIButton+Utils.h"
+    #import "UIColor+Utils.h"
     #import "NSString+Utils.h"
 #endif

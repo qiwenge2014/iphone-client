@@ -8,14 +8,16 @@
 
 #import "JSONModel.h"
 
-@interface Book : JSONModel
+@interface Book : BaseJsonModel
 
 @property(strong, nonatomic) NSString *title;
 
 @property(strong, nonatomic) NSString *author;
 
-@property(strong, nonatomic) NSString *description;
+@property(strong, nonatomic) NSString *desc;
 
 @property(strong, nonatomic) NSString *cover;
+
+@property(strong, nonatomic) NSArray *categories;
 
 @end

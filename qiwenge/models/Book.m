@@ -10,4 +10,9 @@
 
 @implementation Book
 
+//mapping
++(JSONKeyMapper *)keyMapper{
+    return [[JSONKeyMapper alloc] initWithDictionary: @{@"description":@"desc"}];
+}
+
 @end
