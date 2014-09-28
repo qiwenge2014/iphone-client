@@ -15,6 +15,7 @@
 #define         CATEGORIES              @"categories"
 #define         RECOMMEND               @"recommend"
 #define         TOP                     @"top"
+#define         CHAPTERS                @"chapters"
 
 @implementation ApiUtils
 
@@ -32,6 +33,10 @@
 
 +(NSString *)getRank{
      return [NSString stringWithFormat:FORMAT_TWO_PARAMS,BOOKS,TOP];
+}
+
++(NSString *)getBookChapter{
+     return [NSString stringWithFormat:FORMAT_ONE_PARAMS,CHAPTERS];
 }
 
 @end

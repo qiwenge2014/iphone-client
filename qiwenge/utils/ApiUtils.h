@@ -18,4 +18,6 @@
 
 +(NSString *)getRank;
 
++(NSString *)getBookChapter;
+
 @end
