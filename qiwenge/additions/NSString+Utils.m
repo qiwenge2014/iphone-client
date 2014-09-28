@@ -10,6 +10,12 @@
 
 @implementation NSString (Utils)
 
+-(NSString *)replaceAll:(NSString *)oldStr to:(NSString *)newStr{
+    NSMutableString *originStr = [[NSMutableString alloc] initWithString:self];
+   [originStr replaceOccurrencesOfString:oldStr withString:newStr options:NSLiteralSearch  range:NSMakeRange(0, self.length)];
+    return  originStr;
+}
+
 -(NSString *)trim{
      return [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }

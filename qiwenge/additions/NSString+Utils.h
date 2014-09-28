@@ -10,6 +10,8 @@
 
 @interface NSString (Utils)
 
+- (NSString *)replaceAll:(NSString *)oldStr to:(NSString *)newStr;
+
 - (NSString *)trim;
 
 - (NSString *)appendQueryStringKey:(NSString*)key intValue:(NSInteger)value;
