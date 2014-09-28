@@ -10,4 +10,13 @@
 
 @implementation UIImageView (Utils)
 
+-(void)setBookCover:(NSString *)url{
+    [self sd_setImageWithURL:[NSURL URLWithString:url] placeholderImage:[UIImage imageNamed:@"icon_place_holder.png"] options:SDWebImageRefreshCached];
+}
+
+-(void)showBorder{
+    self.layer.borderWidth=1;
+    self.layer.borderColor=[UIColor coverBorder].CGColor;
+}
+
 @end

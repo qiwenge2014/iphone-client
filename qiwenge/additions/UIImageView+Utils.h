@@ -10,4 +10,8 @@
 
 @interface UIImageView (Utils)
 
+-(void)setBookCover:(NSString *)url;
+
+-(void)showBorder;
+
 @end
