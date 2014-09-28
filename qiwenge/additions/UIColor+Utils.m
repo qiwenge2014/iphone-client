@@ -13,6 +13,8 @@
 #define     ACTIONBAR_BG_COLOR              @"#303030"
 #define     COVER_BORDER_COLOR              @"#c7c7c7"
 #define     MAIN_DRESS_COLOR                @"#ee7a31"
+#define     LB_TITLE_COLOR                  @"#606060"
+#define     LB_DESC_COLOR                   @"#838383"
 
 @implementation UIColor (Utils)
 
@@ -34,6 +36,14 @@
 
 +(UIColor *)mainDressColor{
     return [UIColor colorWithHex:MAIN_DRESS_COLOR];
+}
+
++(UIColor *)lbTitleColor{
+    return [UIColor colorWithHex:LB_TITLE_COLOR];
+}
+
++(UIColor *)lbDescColor{
+    return [UIColor colorWithHex:LB_DESC_COLOR];
 }
 
 + (UIColor *)colorWithHex:(NSString *)hexColor {

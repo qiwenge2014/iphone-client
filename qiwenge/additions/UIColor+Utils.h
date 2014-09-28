@@ -20,6 +20,10 @@
 
 + (UIColor *)mainDressColor;
 
++ (UIColor *)lbTitleColor;
+
++ (UIColor *)lbDescColor;
+
 + (UIColor *)colorWithHex:(NSString *)hexColor;
 
 @end
