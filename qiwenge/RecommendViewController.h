@@ -1,4 +1,5 @@
 //
+//  推荐
 //  RecommendViewController.h
 //  qiwenge
 //
@@ -7,11 +8,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableViewController.h"
+#import "ShowBookDelegate.h"
 
-@interface RecommendViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface RecommendViewController : BaseTableViewController 
 
-@property (weak, nonatomic) IBOutlet UITableView *mTableView;
-
-@property (strong, nonatomic) NSMutableArray *data;
+@property (retain, nonatomic) id<ShowBookDelegate> mDelegate;
 
 @end

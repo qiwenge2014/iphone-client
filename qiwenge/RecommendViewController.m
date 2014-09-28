@@ -30,8 +30,11 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    self.data =[[NSMutableArray alloc] init];
+    [super viewDidLoad]; 
+    
+    [self setEnablePullToRefresh:YES];
+    [self setEnableFooterPage:YES];
+    
     [self getBooks];
 }
 
@@ -42,28 +45,41 @@
 }
 
 -(void)getBooks{
-    NSString *url=[ApiUtils getBooks];
-    url=[NSString stringWithFormat:@"%@?limit=20",url];
+    NSString *url=[ApiUtils getRank];
+    url=[url appendQueryStringKey:@"status" intValue:1];
+    url=[url appendQueryStringKey:@"page" intValue:self.pageindex];
+    url=[url appendQueryStringKey:@"limit" stringValue:@"20"];
     [AsyncHttpClient get:url classOf:[Books class] success:^(id result) {
         Books *books=result;
         NSArray *array=books.result;
-        [self.data addObjectsFromArray:array];
-        [self.mTableView reloadData];
-    } failure:nil];
+        [self requestSuccess:array];
+    } failure:^(NSString *failureMessage) {
+        [self requestFailed];
+    }];
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.data.count;
+-(void)requestData{
+    [super requestData];
+    [self getBooks];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    BooksCell *cell=[tableView dequeueReusableCellWithIdentifier:[BooksCell getCellReuseIdentifier]];
-    if (!cell) {
-        cell=[BooksCell getCellFromXib];
+    if (indexPath.row<self.data.count) {
+        BooksCell *cell=[tableView dequeueReusableCellWithIdentifier:[BooksCell getCellReuseIdentifier]];
+        if (!cell) {
+             NSLog(@"create cell");
+            cell=[BooksCell getCellFromXib];
+        }
+        Book *book=[self.data objectAtIndex:indexPath.row];
+        [cell bindData:book];
+        return cell;
     }
-    Book *book=[self.data objectAtIndex:indexPath.row];
-    [cell bindData:book];
-    return cell;
+    return  [super tableView:self.mTableView cellForRowAtIndexPath:indexPath];
 }
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [self.mDelegate skipToBookDetail:[self.data objectAtIndex:indexPath.row]];
+}
+
 
 @end
