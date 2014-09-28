@@ -10,4 +10,6 @@
 
 @interface UIButton (Utils)
 
+-(void)setStyleOfBookDetail;
+
 @end
