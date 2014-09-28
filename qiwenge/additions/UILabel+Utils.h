@@ -10,6 +10,6 @@
 
 @interface UILabel (Utils)
 
-- (void)autoResizeHeight;
+- (void)autoResizeHeight; 
 
 @end
