@@ -28,6 +28,7 @@
     [super viewDidLoad];  
     
     self.recommendViewController=[[RecommendViewController alloc] init];
+    self.recommendViewController.mDelegate=self.mDelegate;
     
     self.rankViewController=[[RankViewController alloc] init];
     self.rankViewController.mDelegate=self.mDelegate;
