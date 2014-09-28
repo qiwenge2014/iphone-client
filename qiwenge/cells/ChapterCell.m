@@ -20,4 +20,8 @@
     // Configure the view for the selected state
 }
 
+-(void)bindData:(Chapter *)chapter{
+    self.lbTitle.text = chapter.title;
+}
+
 @end

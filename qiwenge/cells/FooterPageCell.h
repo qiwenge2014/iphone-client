@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseCell.h"
 
-@interface FooterPageCell : UITableViewCell
+@interface FooterPageCell : BaseCell
 
 @end

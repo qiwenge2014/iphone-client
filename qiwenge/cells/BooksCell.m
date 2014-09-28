@@ -7,7 +7,6 @@
 //
 
 #import "BooksCell.h"
-#import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation BooksCell
 
@@ -27,14 +26,9 @@
     if(book){
         self.lbTitle.text=book.title;
         self.lbAuthor.text=book.author;
-        self.lbDesc.text=book.description;
-        [self.ivCover setImageWithURL:[NSURL URLWithString:book.cover]
-                  placeholderImage:[UIImage imageNamed:@"avatar-placeholder.png"]
-                           options:SDWebImageRefreshCached];
-        
-        CALayer *layer=[self.ivCover layer];
-        layer.borderColor=[UIColor coverBorder].CGColor;
-        layer.borderWidth=1.0f;
+        self.lbDesc.text=book.desc;
+        [self.ivCover setBookCover:book.cover];
+        [self.ivCover showBorder];
     }
 }
  
