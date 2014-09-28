@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseTableViewController.h"
+#import "Book.h"
 
-@interface ChapterViewController : UIViewController
+@interface ChapterViewController : BaseTableViewController <PassArgumentsDelegate>
+
+@property (assign, nonatomic) Book *book;
 
 @end

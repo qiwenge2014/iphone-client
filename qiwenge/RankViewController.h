@@ -7,16 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ShowBookDelegate.h"
-#import "EGORefreshTableHeaderView.h"
+#import "ShowBookDelegate.h" 
+#import "BaseTableViewController.h"
 
-@interface RankViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,EGORefreshTableHeaderDelegate>{
-    id<ShowBookDelegate> mDelegate;
-}
-
-@property (weak, nonatomic) IBOutlet UITableView *mTableView;
-
-@property (strong, nonatomic) NSMutableArray *data;
+@interface RankViewController : BaseTableViewController
 
 @property (retain, nonatomic) id mDelegate;
 
