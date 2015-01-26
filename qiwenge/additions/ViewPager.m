@@ -3,10 +3,13 @@
 
 #import "ViewPager.h"
 
-@implementation ViewPager 
+@implementation ViewPager
+
+bool hasLayouted = false;
 
 - (void)initViews
-{ 
+{
+    NSLog(@"ViewPager initViews");
     self.mScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
     self.mScrollView.delegate = self;
     self.mScrollView.pagingEnabled = YES;
@@ -41,7 +44,9 @@
 
 - (void)layoutSubviews
 {
-    if (isInited) {
+    if (isInited&&!hasLayouted) {
+        NSLog(@"layoutSubviews");
+        hasLayouted = true;
         self.mScrollView.contentSize = CGSizeMake(self.bounds.size.width * [self.views count], 0);
         for (int i = 0; i < [ self.views count]; i++) {
             UIViewController *listVC =  self.views[i];
@@ -54,6 +59,7 @@
 
 - (void)buildUI
 {
+    NSLog(@"buildUI");
     NSUInteger number = [self.mViewPagerDelegate getCount:self];
     for (int i=0; i<number; i++) {
         UIViewController *item=[self.mViewPagerDelegate getItem:self position:i];
@@ -64,6 +70,28 @@
     [self setNeedsLayout];
 }
 
+
+-(void)selectPosition:(int)position{
+    [self.mScrollView setContentOffset:CGPointMake(self.bounds.size.width*position, 0) animated:YES];
+    [self.mViewPagerDelegate onSelectedChanged:position];
+}
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    CGFloat x=self.mScrollView.contentOffset.x/[self.mViewPagerDelegate getCount:self];
+    if (self.indicator) {
+        [self.indicator setFrame:CGRectMake(x,
+                                            self.indicator.frame.origin.y,
+                                            self.indicator.frame.size.width,
+                                            self.indicator.frame.size.height)];
+    }
+    [self.mViewPagerDelegate onPageDidScroll:x];
+}
+
+-(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    CGFloat offset=self.mScrollView.contentOffset.x;
+    int position=offset/self.mScrollView.frame.size.width;
+    [self.mViewPagerDelegate onSelectedChanged:position];
+}
 
 @end
 
