@@ -20,4 +20,6 @@
 
 +(NSString *)getBookChapter;
 
++(NSString *)getChapter:(NSString *) chapterId;
+
 @end

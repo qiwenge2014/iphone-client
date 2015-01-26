@@ -39,4 +39,9 @@
      return [NSString stringWithFormat:FORMAT_ONE_PARAMS,CHAPTERS];
 }
 
++(NSString *)getChapter:(NSString *)chapterId{
+    return [NSString stringWithFormat:FORMAT_TWO_PARAMS,CHAPTERS,chapterId];
+}
+
+
 @end
