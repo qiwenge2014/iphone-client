@@ -14,7 +14,17 @@
 
 @interface BookCityViewController : UIViewController<UIViewPagerDelegate>
  
-@property (weak, nonatomic) IBOutlet ViewPager *mSlideView;
+@property (weak, nonatomic) IBOutlet ViewPager *mViewPager;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnRank;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnRecommend;
+
+@property (weak, nonatomic) IBOutlet UIButton *btnCategory;
+
+@property (weak, nonatomic) IBOutlet UILabel *lbRecommend;
+@property (weak, nonatomic) IBOutlet UILabel *lbRank;
+@property (weak, nonatomic) IBOutlet UILabel *lbCategory;
 
 @property(strong, nonatomic) RecommendViewController *recommendViewController;
 
@@ -23,5 +33,13 @@
 @property(strong, nonatomic) CategoryViewController *categoryViewController;
 
 @property(retain, nonatomic) id mDelegate;
+
+- (IBAction)selectRank:(id)sender;
+
+- (IBAction)selectRecommend:(id)sender;
+
+- (IBAction)selectCategory:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIImageView *ivIndicator;
 
 @end
