@@ -9,6 +9,7 @@
 #import "ChapterViewController.h"
 #import "ChapterList.h"
 #import "ChapterCell.h"
+#import "ReaderViewController.h"
 
 @interface ChapterViewController ()
 
@@ -21,6 +22,9 @@
     // Do any additional setup after loading the view from its nib.
     [self initNavigationBarWithTopTitle:@"章节" leftTitle:@"返回" rightTitle:nil];
     [self getChapters];
+    
+//    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,6 +67,14 @@
     Chapter *chapter=[self.data objectAtIndex:indexPath.row];
     [cell bindData:chapter];
     return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ReaderViewController *reader=[[ReaderViewController alloc] init];
+    Chapter *chapter=[self.data objectAtIndex:indexPath.row];
+    [reader passArguments:chapter];
+    [self.navigationController pushViewController: reader animated:YES];
 }
 
 /*

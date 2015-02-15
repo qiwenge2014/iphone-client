@@ -27,6 +27,35 @@
 {
     [super viewDidLoad];
     self.data =[[NSMutableArray alloc] init];
+    self.mTableView.tableFooterView=[[UIView alloc] init];
+}
+
+UIActivityIndicatorView *indicator;
+
+- (void)showIndicator{
+    if (self.data.count==0) {
+        if (!indicator) {
+            int x = self.view.frame.size.width/2;
+            int y = self.view.frame.size.height/2;
+            CGRect frame = CGRectMake(x, y, 20, 20);
+            indicator=[[UIActivityIndicatorView alloc]
+                       initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+            indicator.frame=frame;
+            indicator.center=CGPointMake(x, y);
+            [self.view addSubview:indicator];
+        }
+        indicator.startAnimating;
+        indicator.hidden=NO;
+    }
+}
+
+- (void)hideIndicator{
+    if (indicator) {
+        indicator.stopAnimating;
+        indicator.hidden=YES;
+        [indicator removeFromSuperview];
+        indicator=nil;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,7 +64,7 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)setEnableFooterPage:(BOOL)enablePage{
+- (void)setEnableFooterPage:(BOOL)enablePage{
     _enableFooterPage=enablePage;
 }
 
@@ -129,6 +158,7 @@
 -(void)refreshFinished{
     self.loadStatus=Normal;
     [self.refreshHeaderView egoRefreshScrollViewDataSourceDidFinishedLoading:self.mTableView];
+    [self hideIndicator];
 }
 
 -(void)requestSuccess:(NSArray *)array{
@@ -150,6 +180,7 @@
 
 -(void)requestData{
     NSLog(@"requestData");
+    [self showIndicator];
 }
 
 @end

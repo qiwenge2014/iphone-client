@@ -10,9 +10,9 @@
 
 #define     BACKGOURND_COLOR                @"#ffffff"
 #define     SECOND_BACKGOURND_COLOR         @"#eeeeee"
-#define     ACTIONBAR_BG_COLOR              @"#303030"
+#define     ACTIONBAR_BG_COLOR              @"#da4336"
 #define     COVER_BORDER_COLOR              @"#c7c7c7"
-#define     MAIN_DRESS_COLOR                @"#ee7a31"
+#define     MAIN_DRESS_COLOR                @"#da4336"
 #define     LB_TITLE_COLOR                  @"#606060"
 #define     LB_DESC_COLOR                   @"#838383"
 

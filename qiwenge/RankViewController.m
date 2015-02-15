@@ -32,16 +32,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-     
     [self setEnableFooterPage:YES];
     [self setEnablePullToRefresh:YES];
-    [self getBooks];
+    [self requestData];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 -(void)requestData{
@@ -57,7 +55,7 @@
     [AsyncHttpClient get:url classOf:[Books class] success:^(id result) {
         Books *books=result;
         NSArray *array=books.result;
-        [self requestSuccess:array];
+        [self requestSuccess:array]; 
     } failure:^(NSString *failureMessage) {
         [self requestFailed];
     }];
@@ -77,6 +75,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
     [self.mDelegate skipToBookDetail:[self.data objectAtIndex:indexPath.row]];
 }
 

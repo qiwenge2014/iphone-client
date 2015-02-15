@@ -35,6 +35,7 @@
 {
     [super viewDidLoad];
     self.data =[[NSMutableArray alloc] init];
+    self.mTableView.tableFooterView=[[UIView alloc] init];
     [self getBooks];
 }
 
@@ -72,7 +73,8 @@
 
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-     Book *book=[self.data objectAtIndex:indexPath.row];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    Book *book=[self.data objectAtIndex:indexPath.row];
     [mDelegate skipToBookDetail:book];
 }
 

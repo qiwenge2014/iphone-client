@@ -12,6 +12,8 @@
 
 -(void)setBookCover:(NSString *)url;
 
+-(void)setImageWithUrl:(NSString *)url;
+
 -(void)showBorder;
 
 @end

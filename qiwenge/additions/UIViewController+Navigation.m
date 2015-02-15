@@ -64,15 +64,22 @@
     }
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 }
+
 -(void)clearNavigation
 {
     self.navigationController.navigationBar.topItem.rightBarButtonItem = nil;
 	self.navigationController.navigationBar.topItem.leftBarButtonItem = nil;
 }
+
+-(void)setNavTitle:(NSString *)title{
+    [self setTitle:title];
+}
+
 -(void)rightBtnAction:(id)sender
 {
     
 }
+
 -(void)leftBtnAction:(id)sender
 {
     [self.navigationController popViewControllerAnimated:YES];

@@ -35,7 +35,7 @@
     [self setEnablePullToRefresh:YES];
     [self setEnableFooterPage:YES];
     
-    [self getBooks];
+    [self requestData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -66,8 +66,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row<self.data.count) {
         BooksCell *cell=[tableView dequeueReusableCellWithIdentifier:[BooksCell getCellReuseIdentifier]];
-        if (!cell) {
-             NSLog(@"create cell");
+        if (!cell) { 
             cell=[BooksCell getCellFromXib];
         }
         Book *book=[self.data objectAtIndex:indexPath.row];
@@ -78,6 +77,8 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES]; 
+
     [self.mDelegate skipToBookDetail:[self.data objectAtIndex:indexPath.row]];
 }
 

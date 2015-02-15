@@ -12,6 +12,6 @@
 
 @interface RankViewController : BaseTableViewController
 
-@property (retain, nonatomic) id mDelegate;
+@property (retain, nonatomic) id mDelegate; 
 
 @end

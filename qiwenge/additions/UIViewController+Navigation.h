@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface UIViewController (Navigation)
+
 -(void)initNavigationBarWithTopTitle:(NSString *)topTitle leftTitle:(NSString *)leftTitle rightTitle:(NSString *)rightTitle;
+
 -(void)initNavigationBarWithTopTitle:(NSString *)topTitle leftImgName:(NSString *)leftImgName rightImgName:(NSString *)rightImgName;
+
 -(void)clearNavigation;
+
+-(void)setNavTitle:(NSString *)title;
 
 @end

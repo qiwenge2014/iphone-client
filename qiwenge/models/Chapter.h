@@ -8,12 +8,12 @@
 
 #import "JSONModel.h" 
 
-@interface Chapter : JSONModel
+@interface Chapter : BaseJsonModel
 
 @property(strong, nonatomic) NSString *title;
 
 @property(strong, nonatomic) NSString *book_title;
 
-//@property(strong, nonatomic) NSString *content;
+@property(strong, nonatomic) NSString<Optional> *content;
 
 @end

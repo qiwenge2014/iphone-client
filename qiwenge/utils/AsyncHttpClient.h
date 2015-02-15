@@ -19,4 +19,6 @@ typedef void(^FailureHandler)(NSString *failureMessage);
 
 +(void)get:(NSString *)url classOf:(Class)classOf success:(SuccessHandler)success failure:(FailureHandler)failure;
 
++(void)getFromResultNode:(NSString *)url classOf:(Class)classOf success:(SuccessHandler)success failure:(FailureHandler)failure;
+
 @end

@@ -16,6 +16,10 @@
     Book *_book;
 }
 
+@property (weak, nonatomic) IBOutlet UIScrollView *mScrollView;
+
+@property (weak, nonatomic) IBOutlet UIImageView *mCover;
+
 @property (weak, nonatomic) IBOutlet UIView *mViewDesc;
 
 @property (weak, nonatomic) IBOutlet UILabel *lableTitle;

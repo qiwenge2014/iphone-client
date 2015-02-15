@@ -17,7 +17,7 @@ typedef enum {
 
 @interface BaseTableViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,EGORefreshTableHeaderDelegate >
 
-@property (nonatomic, nonatomic) IBOutlet UITableView *mTableView;
+@property (nonatomic, nonatomic) IBOutlet UITableView *mTableView; 
 
 @property (strong, nonatomic) NSMutableArray *data;
 
@@ -40,5 +40,9 @@ typedef enum {
 -(void)requestFailed;
 
 -(void)requestData;
+
+-(void)showIndicator;
+
+-(void)hideIndicator;
 
 @end

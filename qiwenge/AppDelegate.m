@@ -8,13 +8,14 @@
 
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "MainViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    RootViewController *rootViewController=[[RootViewController alloc] init];
+    MainViewController *rootViewController=[[MainViewController alloc] init];
     self.navigationController =[[UINavigationController alloc] initWithRootViewController:rootViewController];
     
     self.navigationController.navigationBar.barTintColor=[UIColor actionbarBgColor];

@@ -28,13 +28,12 @@
 {
     [super viewDidLoad]; 
     
-    [self initNavigationBarWithTopTitle:@"书架" leftTitle:nil rightTitle:nil];
+    [self initNavigationBarWithTopTitle:@"书吧" leftTitle:nil rightTitle:nil];
     [self initViews];
 }
 
 -(void)initViews{
-    int height=self.mContainer.frame.size.height;
-    NSLog(@"height:%d:",height);
+   // int height=self.mContainer.frame.size.height;
     
     self.bookShelf=[[BookShelfViewController alloc] init];
     self.bookShelf.mDelegate=self;
@@ -64,10 +63,28 @@
 
 - (IBAction)onBookShelfClick:(id)sender {
     [self showBookShelf];
+    [self clearBtnFocus];
+    [self.ivBookShelf setImage:[UIImage imageNamed:@"ic_main_menu_fav_s.png"]];
 }
 
 - (IBAction)onBookCityClick:(id)sender {
     [self showBookCity];
+    [self clearBtnFocus];
+    [self.ivBookCity setImage:[UIImage imageNamed:@"ic_main_menu_bookcity_s.png"]];
+}
+
+
+- (IBAction)onMeClick:(id)sender {
+    [self clearBtnFocus];
+    [self.ivMe setImage:[UIImage imageNamed:@"ic_main_menu_me_s.png"]];
+}
+
+-(void)clearBtnFocus{
+    [self.ivBookShelf setImage:[UIImage imageNamed:@"ic_main_menu_fav_n.png"]];
+
+    [self.ivBookCity setImage:[UIImage imageNamed:@"ic_main_menu_bookcity_n.png"]];
+
+    [self.ivMe setImage:[UIImage imageNamed:@"ic_main_menu_me_n.png"]];
 }
 
 -(void)skipToBookDetail:(Book *)book{

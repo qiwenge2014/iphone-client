@@ -14,6 +14,12 @@
 
 @property (weak, nonatomic) IBOutlet UIView *mContainer;
 
+@property (weak, nonatomic) IBOutlet UIImageView *ivBookShelf;
+
+@property (weak, nonatomic) IBOutlet UIImageView *ivBookCity;
+
+@property (weak, nonatomic) IBOutlet UIImageView *ivMe;
+
 @property(strong, nonatomic) BookShelfViewController *bookShelf;
 
 @property(strong, nonatomic) BookCityViewController *bookCity;
@@ -21,5 +27,8 @@
 - (IBAction)onBookShelfClick:(id)sender;
 
 - (IBAction)onBookCityClick:(id)sender; 
+
+- (IBAction)onMeClick:(id)sender;
+
 
 @end

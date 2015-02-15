@@ -32,7 +32,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    NSLog(@"viewDidLoad");
+    self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     
     [self initNavigationBarWithTopTitle:@"小说详情" leftTitle:@"返回" rightTitle:nil];
     [self initViews];
@@ -56,6 +57,8 @@
 
 -(void)showBook{
     if (book) {
+        [self.mCover setBookCover:book.cover];
+        
         [self.lableTitle setText:book.title];
         [self.lbAuthor setText:[NSString stringWithFormat:FORMAT_SHOW_AUTHOR,book.author]];
         if (book.categories&&book.categories.count>0) {
@@ -63,21 +66,26 @@
         }
         
         NSString *desc=book.desc;
-        desc=[desc replaceAll:@" " to:@""];
-        desc=[desc replaceAll:@"\n" to:@"\u3000\u3000"];
-        [self.lableDesc setText:[NSString stringWithFormat:@"\u3000\u3000%@",desc]];
-   
-        
-        float heightContainer=self.mViewDesc.frame.size.height;
-        float height=self.lableDesc.frame.size.height;
-        float offset=heightContainer-height;
-
-        [self.lableDesc autoResizeHeight]; 
-        float newHeight=self.lableDesc.frame.size.height;
-        
-        self.mViewDesc.frame=CGRectMake(self.mViewDesc.frame.origin.x, self.mViewDesc.origin.y, self.mViewDesc.frame.size.width, newHeight+offset);
+        [self.lableDesc setBookDesc:desc];
+        [self.lableDesc setLineSpacing:5];
+     
+        [self setContentSize];
     }
+}
+
+-(void)setContentSize{
+    float heightContainer=self.mViewDesc.frame.size.height;
+    float height=self.lableDesc.frame.size.height;
+    float offset=heightContainer-height;
+    [self.lableDesc autoResizeHeight];
     
+    float newHeight=self.lableDesc.frame.size.height;
+    
+    self.mViewDesc.frame=CGRectMake(self.mViewDesc.frame.origin.x, self.mViewDesc.origin.y, self.mViewDesc.frame.size.width, newHeight+offset);
+    
+    int contentHeight=self.mViewDesc.frame.origin.y+self.mViewDesc.size.height+16;
+    
+    self.mScrollView.contentSize = CGSizeMake(320, contentHeight);
 }
 
 -(UIImage *)imageWithColor:(UIColor *)color {
