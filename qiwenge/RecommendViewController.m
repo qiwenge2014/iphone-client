@@ -45,7 +45,7 @@
 }
 
 -(void)getBooks{
-    NSString *url=[ApiUtils getRank];
+    NSString *url=[ApiUtils getRecommendBooks];
     url=[url appendQueryStringKey:@"status" intValue:1];
     url=[url appendQueryStringKey:@"page" intValue:self.pageindex];
     url=[url appendQueryStringKey:@"limit" stringValue:@"20"];

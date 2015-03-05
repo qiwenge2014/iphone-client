@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BookCityViewController.h"
 #import "BookShelfViewController.h"
+#import "MeViewController.h"
 
 @interface MainViewController : UIViewController
 
@@ -23,6 +24,8 @@
 @property(strong, nonatomic) BookShelfViewController *bookShelf;
 
 @property(strong, nonatomic) BookCityViewController *bookCity;
+
+@property(strong, nonatomic) MeViewController *meViewContoller;
 
 - (IBAction)onBookShelfClick:(id)sender;
 

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0707A1631A9452AE00CA6771 /* ic_empty_search.png in Resources */ = {isa = PBXBuildFile; fileRef = 0707A15E1A9452AE00CA6771 /* ic_empty_search.png */; };
+		0707A1641A9452AE00CA6771 /* ic_default_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0707A15F1A9452AE00CA6771 /* ic_default_avatar.png */; };
+		0707A1651A9452AE00CA6771 /* ic_empty_default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0707A1601A9452AE00CA6771 /* ic_empty_default.png */; };
+		0707A1661A9452AE00CA6771 /* ic_main_menu_bookshelf_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 0707A1611A9452AE00CA6771 /* ic_main_menu_bookshelf_n.png */; };
+		0707A1671A9452AE00CA6771 /* ic_main_menu_bookshelf_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 0707A1621A9452AE00CA6771 /* ic_main_menu_bookshelf_s.png */; };
+		0707A16B1A94557C00CA6771 /* MeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0707A1691A94557C00CA6771 /* MeViewController.m */; };
+		0707A16C1A94557C00CA6771 /* MeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0707A16A1A94557C00CA6771 /* MeViewController.xib */; };
 		070EC4FC1A6D3D39000F9C5E /* ReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 070EC4FA1A6D3D39000F9C5E /* ReaderViewController.m */; };
 		070EC4FD1A6D3D39000F9C5E /* ReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 070EC4FB1A6D3D39000F9C5E /* ReaderViewController.xib */; };
 		070EC5001A6D4A40000F9C5E /* ResultItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 070EC4FF1A6D4A40000F9C5E /* ResultItem.m */; };
@@ -20,7 +27,7 @@
 		071EDA6519C3450200DCDEBB /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 071EDA6419C3450200DCDEBB /* NSString+Utils.m */; };
 		074358C819CF27B30034085D /* UILabel+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 074358C519CF27B30034085D /* UILabel+Utils.m */; };
 		074358C919CF27B30034085D /* UIView+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 074358C719CF27B30034085D /* UIView+Utils.m */; };
-		0747980F1A3BEEB400978B40 /* default_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 0747980A1A3BEEB400978B40 /* default_avatar.png */; };
+		074775991A938BF9006A9215 /* bottom_menu_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 074775981A938BF9006A9215 /* bottom_menu_shadow.png */; };
 		074798101A3BEEB400978B40 /* ic_main_menu_me_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 0747980B1A3BEEB400978B40 /* ic_main_menu_me_n.png */; };
 		074798111A3BEEB400978B40 /* ic_main_menu_me_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 0747980C1A3BEEB400978B40 /* ic_main_menu_me_s.png */; };
 		074798121A3BEEB400978B40 /* ic_main_menu_bookcity_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 0747980D1A3BEEB400978B40 /* ic_main_menu_bookcity_n.png */; };
@@ -39,8 +46,6 @@
 		0751FDCF19A6F1A1009BBA85 /* CategoryItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDCE19A6F1A1009BBA85 /* CategoryItem.m */; };
 		0751FDD219A6F1D0009BBA85 /* CategoryList.m in Sources */ = {isa = PBXBuildFile; fileRef = 0751FDD119A6F1D0009BBA85 /* CategoryList.m */; };
 		0758D85E19D70DD5006AA7A2 /* BaseJsonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0758D85D19D70DD5006AA7A2 /* BaseJsonModel.m */; };
-		07594BAD19AF4C8500E9CB2D /* ic_main_menu_fav_n.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BA719AF4C8500E9CB2D /* ic_main_menu_fav_n.png */; };
-		07594BAE19AF4C8500E9CB2D /* ic_main_menu_fav_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BA819AF4C8500E9CB2D /* ic_main_menu_fav_s.png */; };
 		07594BB119AF4C8500E9CB2D /* seekbar_thumb_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BAB19AF4C8500E9CB2D /* seekbar_thumb_normal.png */; };
 		07594BB219AF4C8500E9CB2D /* seekbar_thumb_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 07594BAC19AF4C8500E9CB2D /* seekbar_thumb_selected.png */; };
 		07594BB519AF772D00E9CB2D /* AsyncHttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 07594BB419AF772D00E9CB2D /* AsyncHttpClient.m */; };
@@ -100,6 +105,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0707A15E1A9452AE00CA6771 /* ic_empty_search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_empty_search.png; sourceTree = "<group>"; };
+		0707A15F1A9452AE00CA6771 /* ic_default_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_default_avatar.png; sourceTree = "<group>"; };
+		0707A1601A9452AE00CA6771 /* ic_empty_default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_empty_default.png; sourceTree = "<group>"; };
+		0707A1611A9452AE00CA6771 /* ic_main_menu_bookshelf_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_bookshelf_n.png; sourceTree = "<group>"; };
+		0707A1621A9452AE00CA6771 /* ic_main_menu_bookshelf_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_bookshelf_s.png; sourceTree = "<group>"; };
+		0707A1681A94557C00CA6771 /* MeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeViewController.h; sourceTree = "<group>"; };
+		0707A1691A94557C00CA6771 /* MeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeViewController.m; sourceTree = "<group>"; };
+		0707A16A1A94557C00CA6771 /* MeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeViewController.xib; sourceTree = "<group>"; };
 		070EC4F91A6D3D39000F9C5E /* ReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderViewController.h; sourceTree = "<group>"; };
 		070EC4FA1A6D3D39000F9C5E /* ReaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderViewController.m; sourceTree = "<group>"; };
 		070EC4FB1A6D3D39000F9C5E /* ReaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReaderViewController.xib; sourceTree = "<group>"; };
@@ -124,7 +137,7 @@
 		074358C519CF27B30034085D /* UILabel+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Utils.m"; sourceTree = "<group>"; };
 		074358C619CF27B30034085D /* UIView+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Utils.h"; sourceTree = "<group>"; };
 		074358C719CF27B30034085D /* UIView+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Utils.m"; sourceTree = "<group>"; };
-		0747980A1A3BEEB400978B40 /* default_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_avatar.png; sourceTree = "<group>"; };
+		074775981A938BF9006A9215 /* bottom_menu_shadow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom_menu_shadow.png; sourceTree = "<group>"; };
 		0747980B1A3BEEB400978B40 /* ic_main_menu_me_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_me_n.png; sourceTree = "<group>"; };
 		0747980C1A3BEEB400978B40 /* ic_main_menu_me_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_me_s.png; sourceTree = "<group>"; };
 		0747980D1A3BEEB400978B40 /* ic_main_menu_bookcity_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_bookcity_n.png; sourceTree = "<group>"; };
@@ -152,8 +165,6 @@
 		0751FDD119A6F1D0009BBA85 /* CategoryList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryList.m; sourceTree = "<group>"; };
 		0758D85C19D70DD5006AA7A2 /* BaseJsonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseJsonModel.h; sourceTree = "<group>"; };
 		0758D85D19D70DD5006AA7A2 /* BaseJsonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseJsonModel.m; sourceTree = "<group>"; };
-		07594BA719AF4C8500E9CB2D /* ic_main_menu_fav_n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_fav_n.png; sourceTree = "<group>"; };
-		07594BA819AF4C8500E9CB2D /* ic_main_menu_fav_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_main_menu_fav_s.png; sourceTree = "<group>"; };
 		07594BAB19AF4C8500E9CB2D /* seekbar_thumb_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seekbar_thumb_normal.png; sourceTree = "<group>"; };
 		07594BAC19AF4C8500E9CB2D /* seekbar_thumb_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seekbar_thumb_selected.png; sourceTree = "<group>"; };
 		07594BB319AF772D00E9CB2D /* AsyncHttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncHttpClient.h; sourceTree = "<group>"; };
@@ -296,16 +307,19 @@
 		07A1D7CD19AB7E42000E21FB /* images */ = {
 			isa = PBXGroup;
 			children = (
+				0707A15E1A9452AE00CA6771 /* ic_empty_search.png */,
+				0707A15F1A9452AE00CA6771 /* ic_default_avatar.png */,
+				0707A1601A9452AE00CA6771 /* ic_empty_default.png */,
+				0707A1611A9452AE00CA6771 /* ic_main_menu_bookshelf_n.png */,
+				0707A1621A9452AE00CA6771 /* ic_main_menu_bookshelf_s.png */,
+				074775981A938BF9006A9215 /* bottom_menu_shadow.png */,
 				074798161A3C14A200978B40 /* splash.png */,
-				0747980A1A3BEEB400978B40 /* default_avatar.png */,
+				0747980D1A3BEEB400978B40 /* ic_main_menu_bookcity_n.png */,
 				0747980B1A3BEEB400978B40 /* ic_main_menu_me_n.png */,
 				0747980C1A3BEEB400978B40 /* ic_main_menu_me_s.png */,
-				0747980D1A3BEEB400978B40 /* ic_main_menu_bookcity_n.png */,
 				0747980E1A3BEEB400978B40 /* ic_main_menu_bookcity_s.png */,
 				07E1D85519D1B8CA0079C53E /* icon_place_holder.png */,
 				07E4390419C5E00F00F8B04A /* icon_pull_to_refresh.png */,
-				07594BA719AF4C8500E9CB2D /* ic_main_menu_fav_n.png */,
-				07594BA819AF4C8500E9CB2D /* ic_main_menu_fav_s.png */,
 				07594BAB19AF4C8500E9CB2D /* seekbar_thumb_normal.png */,
 				07594BAC19AF4C8500E9CB2D /* seekbar_thumb_selected.png */,
 				07A1D7CE19AB7E42000E21FB /* icon.png */,
@@ -477,6 +491,9 @@
 				10BBE711196BC44B00872B2A /* BookShelfViewController.h */,
 				10BBE712196BC44B00872B2A /* BookShelfViewController.m */,
 				10BBE713196BC44B00872B2A /* BookShelfViewController.xib */,
+				0707A1681A94557C00CA6771 /* MeViewController.h */,
+				0707A1691A94557C00CA6771 /* MeViewController.m */,
+				0707A16A1A94557C00CA6771 /* MeViewController.xib */,
 			);
 			name = maintab;
 			sourceTree = "<group>";
@@ -644,23 +661,27 @@
 				10643F21196B92D100FD6FF0 /* InfoPlist.strings in Resources */,
 				074798131A3BEEB400978B40 /* ic_main_menu_bookcity_s.png in Resources */,
 				10643F29196B92D100FD6FF0 /* Images.xcassets in Resources */,
+				074775991A938BF9006A9215 /* bottom_menu_shadow.png in Resources */,
 				10BBE715196BC44B00872B2A /* BookShelfViewController.xib in Resources */,
-				0747980F1A3BEEB400978B40 /* default_avatar.png in Resources */,
+				0707A1661A9452AE00CA6771 /* ic_main_menu_bookshelf_n.png in Resources */,
 				0751FDBF19A6E41B009BBA85 /* RankViewController.xib in Resources */,
 				10BBE6FD196BA23900872B2A /* RootViewController.xib in Resources */,
-				07594BAE19AF4C8500E9CB2D /* ic_main_menu_fav_s.png in Resources */,
-				07594BAD19AF4C8500E9CB2D /* ic_main_menu_fav_n.png in Resources */,
 				07E1D85619D1B8CA0079C53E /* icon_place_holder.png in Resources */,
 				10BBE70F196BB98200872B2A /* BookCityViewController.xib in Resources */,
 				0751FDBA19A6E247009BBA85 /* RecommendViewController.xib in Resources */,
 				07CE714D19B1DF3E009FCA6F /* BookDetailViewController.xib in Resources */,
 				07594BB119AF4C8500E9CB2D /* seekbar_thumb_normal.png in Resources */,
+				0707A16C1A94557C00CA6771 /* MeViewController.xib in Resources */,
+				0707A1651A9452AE00CA6771 /* ic_empty_default.png in Resources */,
 				074798171A3C14A200978B40 /* splash.png in Resources */,
 				0712E47819D65DE5002FC20D /* ChapterViewController.xib in Resources */,
+				0707A1631A9452AE00CA6771 /* ic_empty_search.png in Resources */,
 				074798121A3BEEB400978B40 /* ic_main_menu_bookcity_n.png in Resources */,
 				10BBE71F196BC83C00872B2A /* BooksCell.xib in Resources */,
 				07A1D7CF19AB7E42000E21FB /* icon.png in Resources */,
 				0751FDC919A6F09D009BBA85 /* CategoryCell.xib in Resources */,
+				0707A1671A9452AE00CA6771 /* ic_main_menu_bookshelf_s.png in Resources */,
+				0707A1641A9452AE00CA6771 /* ic_default_avatar.png in Resources */,
 				070EC4FD1A6D3D39000F9C5E /* ReaderViewController.xib in Resources */,
 				07E4390519C5E00F00F8B04A /* icon_pull_to_refresh.png in Resources */,
 				074798101A3BEEB400978B40 /* ic_main_menu_me_n.png in Resources */,
@@ -730,6 +751,7 @@
 				07BA0C6C19CB29810089E7DD /* FooterPageCell.m in Sources */,
 				0751FDC819A6F09D009BBA85 /* CategoryCell.m in Sources */,
 				0712E48119D660BC002FC20D /* Chapter.m in Sources */,
+				0707A16B1A94557C00CA6771 /* MeViewController.m in Sources */,
 				077ACDFC19C8791D009C28DB /* BaseTableViewController.m in Sources */,
 				0751FDC319A6EDE1009BBA85 /* CategoryViewController.m in Sources */,
 				10BBE734196BEC2B00872B2A /* Book.m in Sources */,

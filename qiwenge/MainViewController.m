@@ -43,17 +43,29 @@
     self.bookCity.mDelegate=self;
     [self.mContainer addSubview:self.bookCity.view];
     
+    self.meViewContoller=[[MeViewController alloc] init];
+    [self.mContainer addSubview:self.meViewContoller.view];
+    
     [self.bookCity.view setHidden:YES];
+    [self.meViewContoller.view setHidden:YES];
 }
 
 -(void)showBookCity{
     [self.bookCity.view setHidden:NO];
     [self.bookShelf.view setHidden:YES];
+    [self.meViewContoller.view setHidden:YES];
 }
 
 -(void)showBookShelf{
-    [self.bookCity.view setHidden:YES];
     [self.bookShelf.view setHidden:NO];
+    [self.bookCity.view setHidden:YES];
+    [self.meViewContoller.view setHidden:YES];
+}
+
+-(void)showMe{
+    [self.bookShelf.view setHidden:YES];
+    [self.bookCity.view setHidden:YES];
+    [self.meViewContoller.view setHidden:NO];
 }
 
 - (void)didReceiveMemoryWarning
@@ -64,7 +76,7 @@
 - (IBAction)onBookShelfClick:(id)sender {
     [self showBookShelf];
     [self clearBtnFocus];
-    [self.ivBookShelf setImage:[UIImage imageNamed:@"ic_main_menu_fav_s.png"]];
+    [self.ivBookShelf setImage:[UIImage imageNamed:@"ic_main_menu_bookshelf_s.png"]];
 }
 
 - (IBAction)onBookCityClick:(id)sender {
@@ -75,12 +87,13 @@
 
 
 - (IBAction)onMeClick:(id)sender {
+    [self showMe];
     [self clearBtnFocus];
     [self.ivMe setImage:[UIImage imageNamed:@"ic_main_menu_me_s.png"]];
 }
 
 -(void)clearBtnFocus{
-    [self.ivBookShelf setImage:[UIImage imageNamed:@"ic_main_menu_fav_n.png"]];
+    [self.ivBookShelf setImage:[UIImage imageNamed:@"ic_main_menu_bookshelf_n.png"]];
 
     [self.ivBookCity setImage:[UIImage imageNamed:@"ic_main_menu_bookcity_n.png"]];
 
